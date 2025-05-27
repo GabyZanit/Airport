@@ -13,5 +13,7 @@ import org.springframework.stereotype.Repository;
 public interface AirportRepository extends JpaRepository<Airport, Long> {
     
     List<Airport> findByCityIgnoreCase(String city);
-     List<Airport> findByCountryIgnoreCase(String city);
+    List<Airport> findByCountryIgnoreCase(String city);
+    
+    Airport findByIataCode(String iataCode);
 }
