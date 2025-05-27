@@ -1,5 +1,3 @@
-
-
 insert into airport (name, city, country, iatacode, icaocode, latitude, longitude, altitude, offsetutc, dstcode, timezone) values ('Guarulhos - Governador André Franco Montoro International Airport', 'Sao Paulo', 'Brazil', 'GRU', 'SBGR', -23.43555641, -46.47305679, 2459, -3, 'S', 'America/Sao_Paulo');
 insert into airport (name, city, country, iatacode, icaocode, latitude, longitude, altitude, offsetutc, dstcode, timezone) values ('Campo de Marte Airport', 'Sao Paulo', 'Brazil', '\N', 'SBMT', -23.50909996, -46.63779831, 2368, -3, 'S', 'America/Sao_Paulo');
 insert into airport (name, city, country, iatacode, icaocode, latitude, longitude, altitude, offsetutc, dstcode, timezone) values ('Congonhas Airport', 'Sao Paulo', 'Brazil', 'CGH', 'SBSP', -23.62611008, -46.65638733, 2631, -3, 'S', 'America/Sao_Paulo');

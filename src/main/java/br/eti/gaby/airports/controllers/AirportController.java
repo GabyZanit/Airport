@@ -1,5 +1,6 @@
 package br.eti.gaby.airports.controllers;
 
+import br.eti.gaby.airports.DTO.AirportMinDTO;
 import br.eti.gaby.airports.entities.Airport;
 import br.eti.gaby.airports.services.AirportService;
 import java.util.List;
@@ -24,17 +25,29 @@ public class AirportController {
         List<Airport> result = airportService.findAll();
         return result;
     }
-    
+
     @GetMapping("/city/{cityName}")
     public ResponseEntity<List<Airport>> findByCityIgnoreCase(@PathVariable String cityName) {
         List<Airport> result = airportService.findByCity(cityName);
-        
+
         if (result.isEmpty()) {
             return ResponseEntity.notFound().build();
-        
+
         } else {
             return ResponseEntity.ok(result);
-        
+
+        }
+    }
+
+    @GetMapping("/country/{countryName}")
+    public ResponseEntity<List<AirportMinDTO>> findByCountryIgnoreCase(@PathVariable String countryName) {
+
+        List<AirportMinDTO> result = airportService.findByCountry(countryName);
+        if (result.isEmpty()) {
+            return ResponseEntity.notFound().build();
+
+        } else {
+            return ResponseEntity.ok(result);
         }
     }
 }
