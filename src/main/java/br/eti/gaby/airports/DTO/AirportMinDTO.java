@@ -17,6 +17,8 @@ public class AirportMinDTO {
     private String city;
     private String iataCode;
     
+                            
+    
     public AirportMinDTO() {   
 }
     
@@ -58,7 +60,7 @@ public class AirportMinDTO {
     public void setIataCode(String iataCode) {
         this.iataCode = iataCode;
     }
-    
+
     
 }
 
